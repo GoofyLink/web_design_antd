@@ -68,7 +68,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.1",
     "@changesets/cli": "^3.0.3",
-    "@tsdown/css": "0.22.14",
+    "@tsdown/css": "0.23.7",
     "@types/node": "^26.6.5",
     "@vben/commitlint-config": "5.8.0",
     "@vben/eslint-config": "5.8.0",
@@ -88,18 +88,18 @@
     "happy-dom": "^20.14.5",
     "is-ci": "^4.1.0",
     "lefthook": "^2.1.14",
-    "oxfmt": "^0.75.0",
+    "oxfmt": "^0.80.0",
     "oxlint": "^1.90.0",
     "oxlint-tsgolint": "^7.0.2005",
     "playwright": "^1.63.0",
     "rimraf": "^6.1.3",
     "tailwindcss": "^4.3.5",
-    "tsdown": "0.22.14",
+    "tsdown": "0.23.7",
     "turbo": "^2.10.13",
     "typescript": "^6.0.3",
     "vite": "^8.3.8",
     "vitest": "^4.1.11",
-    "vue": "3.5.41",
+    "vue": "3.5.46",
     "vue-tsc": "^3.3.11"
   },
   "engines": {
@@ -128,6 +128,6 @@
     "clsx": "^2.1.1",
     "pinia": "^4.0.2",
     "prosemirror-view": "^1.42.6",
-    "vue": "3.5.41"
+    "vue": "3.5.46"
   }
 }
