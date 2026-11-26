@@ -25,6 +25,9 @@ export const overridesPreferences = defineOverridesPreferences({
     enableRefreshToken: true,
   },
   copyright: appCopyrightPreferences,
+  widget: {
+    logoutButtonPosition: 'user-dropdown',
+  },
 });
 
 export const preferencesExtension =

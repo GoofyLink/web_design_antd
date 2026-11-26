@@ -13,7 +13,7 @@ export namespace AuthApi {
   }
 
   export interface RefreshTokenResult {
-    data: { accessToken: string };
+    data: { code: number; data: LoginResult; message: string };
     status: number;
   }
 }
@@ -29,13 +29,18 @@ export async function loginApi(data: AuthApi.LoginParams) {
  * 刷新accessToken
  */
 export async function refreshTokenApi() {
-  return baseRequestClient.post<AuthApi.RefreshTokenResult>(
+  const response = await baseRequestClient.post<AuthApi.RefreshTokenResult>(
     '/auth/refresh',
     undefined,
     {
       withCredentials: true,
     },
   );
+  const payload = response.data;
+  if (payload.code !== 0 || !payload.data?.accessToken) {
+    throw new Error(payload.message || '登录会话刷新失败');
+  }
+  return payload.data;
 }
 
 /**

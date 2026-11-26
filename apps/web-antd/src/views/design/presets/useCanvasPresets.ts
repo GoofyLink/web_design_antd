@@ -21,6 +21,9 @@ export function useCanvasPresets() {
     busy.value = true;
     error.value = '';
     try {
+      // Permissions may have changed since login (for example after a migration).
+      const codes = await requestClient.get<string[]>('/auth/codes');
+      store.setAccessCodes(codes);
       const data = await requestClient.get<{ items: CanvasPreset[]; version: number }>(
         '/canvas-presets',
       );
@@ -34,7 +37,7 @@ export function useCanvasPresets() {
     }
   }
   async function save() {
-    if (busy.value) return;
+    if (busy.value || !canWrite.value || !version.value) return false;
     busy.value = true;
     error.value = '';
     try {

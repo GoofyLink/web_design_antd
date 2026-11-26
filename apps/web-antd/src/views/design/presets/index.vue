@@ -62,6 +62,18 @@ onBeforeRouteLeave(() => !dirty.value || window.confirm('尺寸配置尚未保�
         type="info"
         show-icon
         class="presets-notice"
+      /><Alert
+        v-if="!busy && version && !canWrite"
+        message="当前账号只有查看权限。请由管理员在角色与权限中授予“管理画布推荐尺寸”权限，再点击重新加载。"
+        type="warning"
+        show-icon
+        class="presets-notice"
+      /><Alert
+        v-if="canWrite"
+        :message="dirty ? '有未保存的修改，请点击右上角“保存配置”使其生效。' : '点击“新增尺寸”添加；直接修改表格中的名称、分类、宽高和启用状态，支持移除与上下排序，最后点击“保存配置”。'"
+        :type="dirty ? 'warning' : 'info'"
+        show-icon
+        class="presets-notice"
       /><Alert v-if="error" :message="error" type="error" show-icon class="presets-notice" /><Table
         :columns="columns"
         :data-source="items"
