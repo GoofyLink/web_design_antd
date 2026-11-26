@@ -56,6 +56,6 @@
   "devDependencies": {
     "@vue/test-utils": "^2.5.1",
     "element-plus": "^2.14.3",
-    "unplugin-vue": "^7.2.0"
+    "unplugin-vue": "^8.0.1"
   }
 }
