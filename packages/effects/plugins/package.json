@@ -1,0 +1,75 @@
+{
+  "name": "@vben/plugins",
+  "version": "5.8.0",
+  "homepage": "https://github.com/vbenjs/vue-vben-admin",
+  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "directory": "packages/effects/plugins"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./echarts": {
+      "types": "./src/echarts/index.ts",
+      "default": "./src/echarts/index.ts"
+    },
+    "./tiptap": {
+      "types": "./src/tiptap/index.ts",
+      "default": "./src/tiptap/index.ts"
+    },
+    "./vxe-table": {
+      "types": "./src/vxe-table/index.ts",
+      "default": "./src/vxe-table/index.ts"
+    },
+    "./vxe-table/locales": {
+      "types": "./src/vxe-table/locales.ts",
+      "default": "./src/vxe-table/locales.ts"
+    },
+    "./motion": {
+      "types": "./src/motion/index.ts",
+      "default": "./src/motion/index.ts"
+    }
+  },
+  "dependencies": {
+    "@tiptap/core": "^3.32.0",
+    "@tiptap/extension-highlight": "^3.32.0",
+    "@tiptap/extension-image": "^3.32.0",
+    "@tiptap/extension-link": "^3.32.0",
+    "@tiptap/extension-placeholder": "^3.32.0",
+    "@tiptap/extension-text-align": "^3.32.0",
+    "@tiptap/extension-text-style": "^3.32.0",
+    "@tiptap/pm": "^3.32.0",
+    "@tiptap/starter-kit": "^3.32.0",
+    "@tiptap/vue-3": "^3.32.0",
+    "@vben-core/design": "5.8.0",
+    "@vben-core/form-ui": "5.8.0",
+    "@vben-core/popup-ui": "5.8.0",
+    "@vben-core/shadcn-ui": "5.8.0",
+    "@vben-core/shared": "5.8.0",
+    "@vben/hooks": "5.8.0",
+    "@vben/icons": "5.8.0",
+    "@vben/locales": "5.8.0",
+    "@vben/preferences": "5.8.0",
+    "@vben/types": "5.8.0",
+    "@vben/utils": "5.8.0",
+    "@vueuse/core": "^15.0.0",
+    "@vueuse/motion": "^3.0.3",
+    "@vxe-ui/core": "^4.5.2",
+    "echarts": "^6.1.0",
+    "vue": "3.5.41",
+    "vxe-pc-ui": "^4.20.33",
+    "vxe-table": "^4.23.12"
+  }
+}

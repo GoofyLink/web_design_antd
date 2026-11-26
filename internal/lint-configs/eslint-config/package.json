@@ -1,0 +1,47 @@
+{
+  "name": "@vben/eslint-config",
+  "version": "5.8.0",
+  "private": true,
+  "homepage": "https://github.com/vbenjs/vue-vben-admin",
+  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "directory": "internal/lint-configs/eslint-config"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "stub": "tsdown",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/parser": "^8.72.0",
+    "@vben/oxlint-config": "5.8.0",
+    "eslint": "^10.10.0",
+    "eslint-plugin-jsonc": "^3.4.2",
+    "eslint-plugin-n": "^18.2.2",
+    "eslint-plugin-oxlint": "^1.90.0",
+    "eslint-plugin-perfectionist": "^5.10.0",
+    "eslint-plugin-pnpm": "^1.7.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "eslint-plugin-vue": "^10.10.0",
+    "eslint-plugin-yml": "^3.6.0",
+    "globals": "^17.7.0",
+    "vue-eslint-parser": "^10.4.1",
+    "yaml-eslint-parser": "^2.1.0"
+  }
+}

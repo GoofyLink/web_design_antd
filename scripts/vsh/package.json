@@ -1,0 +1,32 @@
+{
+  "name": "@vben/vsh",
+  "version": "5.8.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "stub": "tsdown",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "vsh": "./bin/vsh.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@vben/node-utils": "5.8.0",
+    "cac": "^7.0.0",
+    "circular-dependency-scanner": "^3.0.1",
+    "knip": "^6.29.0",
+    "publint": "^0.3.22"
+  }
+}

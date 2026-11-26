@@ -1,0 +1,50 @@
+{
+  "name": "@vben/web-naive",
+  "version": "5.8.0",
+  "homepage": "https://vben.pro",
+  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "directory": "apps/web-naive"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "vben",
+    "email": "ann.vben@gmail.com",
+    "url": "https://github.com/anncwb"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build --mode production",
+    "build:analyze": "vite build --mode analyze",
+    "dev": "vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "dependencies": {
+    "@vben-core/typings": "5.8.0",
+    "@vben/access": "5.8.0",
+    "@vben/common-ui": "5.8.0",
+    "@vben/constants": "5.8.0",
+    "@vben/hooks": "5.8.0",
+    "@vben/icons": "5.8.0",
+    "@vben/layouts": "5.8.0",
+    "@vben/locales": "5.8.0",
+    "@vben/plugins": "5.8.0",
+    "@vben/preferences": "5.8.0",
+    "@vben/request": "5.8.0",
+    "@vben/stores": "5.8.0",
+    "@vben/styles": "5.8.0",
+    "@vben/types": "5.8.0",
+    "@vben/utils": "5.8.0",
+    "@vueuse/core": "^15.0.0",
+    "naive-ui": "^2.44.1",
+    "pinia": "^4.0.2",
+    "vue": "3.5.41",
+    "vue-router": "^5.2.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@vben/backend-mock",
+  "version": "5.8.0",
+  "description": "",
+  "private": true,
+  "license": "MIT",
+  "author": "",
+  "scripts": {
+    "build": "nitro build",
+    "start": "nitro dev",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "jsonwebtoken": "^9.0.3",
+    "nitropack": "^2.13.4"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "h3": "^1.15.11"
+  }
+}

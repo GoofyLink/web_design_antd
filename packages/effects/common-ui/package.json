@@ -1,0 +1,60 @@
+{
+  "name": "@vben/common-ui",
+  "version": "5.8.0",
+  "homepage": "https://github.com/vbenjs/vue-vben-admin",
+  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "directory": "packages/effects/common-ui"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./es/tippy": {
+      "types": "./src/components/tippy/index.ts",
+      "default": "./src/components/tippy/index.ts"
+    },
+    "./es/loading": {
+      "types": "./src/components/loading/index.ts",
+      "default": "./src/components/loading/index.ts"
+    }
+  },
+  "dependencies": {
+    "@vben-core/design": "5.8.0",
+    "@vben-core/form-ui": "5.8.0",
+    "@vben-core/popup-ui": "5.8.0",
+    "@vben-core/preferences": "5.8.0",
+    "@vben-core/shadcn-ui": "5.8.0",
+    "@vben-core/shared": "5.8.0",
+    "@vben/constants": "5.8.0",
+    "@vben/hooks": "5.8.0",
+    "@vben/icons": "5.8.0",
+    "@vben/locales": "5.8.0",
+    "@vben/types": "5.8.0",
+    "@vueuse/core": "^15.0.0",
+    "@vueuse/integrations": "^15.0.0",
+    "json-bigint": "^1.0.0",
+    "qrcode": "^1.5.4",
+    "tippy.js": "^6.3.7",
+    "vue": "3.5.41",
+    "vue-json-pretty": "^2.6.0",
+    "vue-router": "^5.2.0",
+    "vue-tippy": "^6.7.1"
+  },
+  "devDependencies": {
+    "@types/json-bigint": "^1.0.4",
+    "@types/qrcode": "^1.5.6",
+    "@vue/test-utils": "^2.5.1"
+  }
+}
