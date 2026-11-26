@@ -30,7 +30,7 @@
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.8.1",
     "eslint-plugin-better-tailwindcss": "^4.11.0",
-    "eslint-plugin-command": "^3.5.3",
+    "eslint-plugin-command": "^4.0.0",
     "oxlint": "^1.90.0"
   }
 }
